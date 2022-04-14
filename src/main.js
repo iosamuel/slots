@@ -7,14 +7,15 @@ app.component("i18n", i18n);
 
 const locales = {
   en: {
-    hello: "Hello ",
-    welcome: "{name} welcome to {app}",
+    hello: "Hello",
+    welcome: "{name} Welcome to my {app}",
   },
   es: {
-    hello: "Hola ",
-    welcome: "{name} bienvenido a {app}",
+    hello: "Hola",
+    welcome: "{name} Bienvenido a {app}",
   },
 };
+
 app.provide("currentLocale", ref("en"));
 app.provide("locales", locales);
 
